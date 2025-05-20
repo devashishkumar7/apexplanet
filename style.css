@@ -1,0 +1,151 @@
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffe6f0;
+  padding: 20px;
+  border-bottom: 2px solid #f4b6c2;
+  position: relative;
+}
+
+.site-title {
+  font-size: 2rem;
+  color: #d63384;
+  margin: 0;
+}
+
+.site-logo {
+  width: 150px;       /* 🔺 Increased size */
+  height: auto;
+  border-radius: 12px; /* Optional: Keep this for slightly rounded corners */
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+
+.form-link {
+  position: absolute;
+  right: 100px;
+  top: 30px;
+  background-color: #c2185b;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.form-link:hover {
+  background-color: #a0144a;
+}
+
+.services-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.services-header h2 {
+  font-size: 2.5rem;
+  color: #d63384;
+  margin: 0;
+}
+
+.services-logo {
+  width: 150px; /* bigger size */
+  height: auto;
+  border-radius: 12px; /* optional rounded corners */
+  object-fit: contain;
+}
+
+
+
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fffafc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.services {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.services h6 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #d63384;
+  margin-bottom: 10px;
+}
+
+.services .intro {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.service-item {
+  background-color: #fff0f5;
+  border: 1px solid #ffc2d1;
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+}
+
+.service-item h3 {
+  color: #c2185b;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.alert-section {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.alert-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.alert-btn:hover {
+  background-color: #d93636;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8e1e8;
+  margin-top: 40px;
+  color: #555;
+}
