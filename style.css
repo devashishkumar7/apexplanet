@@ -1,5 +1,69 @@
 
-/* General Styling */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffe6f0;
+  padding: 20px;
+  border-bottom: 2px solid #f4b6c2;
+  position: relative;
+}
+
+.site-title {
+  font-size: 2rem;
+  color: #d63384;
+  margin: 0;
+}
+
+.site-logo {
+  width: 150px;   
+  height: auto;
+  border-radius: 12px; 
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+
+.form-link {
+  position: absolute;
+  right: 100px;
+  top: 30px;
+  background-color: #c2185b;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.form-link:hover {
+  background-color: #a0144a;
+}
+
+.services-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.services-header h2 {
+  font-size: 2.5rem;
+  color: #d63384;
+  margin: 0;
+}
+
+.services-logo {
+  width: 150px; /* bigger size */
+  height: auto;
+  border-radius: 12px; /* optional rounded corners */
+  object-fit: contain;
+}
+
+
+
+
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #fffafc;
@@ -8,40 +72,6 @@ body {
   padding: 0;
 }
 
-/* Header */
-.main-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ffe6f0;
-  padding: 20px;
-  border-bottom: 2px solid #f4b6c2;
-  flex-wrap: wrap;
-  text-align: center;
-}
-
-.site-title {
-  font-size: 2rem;
-  color: #d63384;
-  margin: 0;
-  flex: 1 1 60%;
-}
-
-.form-link {
-  background-color: #c2185b;
-  color: white;
-  padding: 10px 16px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-size: 1rem;
-  margin: 10px;
-}
-
-.form-link:hover {
-  background-color: #a0144a;
-}
-
-/* Services Section */
 .services {
   padding: 40px 20px;
   max-width: 1200px;
@@ -60,14 +90,6 @@ body {
   font-size: 1.1rem;
   color: #555;
   margin-bottom: 40px;
-}
-
-.services-logo {
-  display: block;
-  margin: 0 auto 20px;
-  width: 150px;
-  height: auto;
-  border-radius: 12px;
 }
 
 .service-list {
@@ -95,58 +117,11 @@ body {
   margin-bottom: 10px;
 }
 
-/* Form */
-form {
-  max-width: 500px;
-  margin: 40px auto;
-  background-color: #fff0f5;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-form label {
-  display: block;
-  margin-top: 15px;
-  font-weight: bold;
-}
-
-form input[type="text"],
-form input[type="email"],
-form input[type="date"],
-form input[type="tel"] {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-}
-
-.radio-group {
-  margin-top: 10px;
-}
-
-.radio-group input {
-  margin-right: 5px;
-}
-
-form button {
-  margin-top: 20px;
-  width: 100%;
-  background-color: #c2185b;
-  color: white;
-  padding: 12px;
-  border: none;
-  border-radius: 6px;
+.service-item p {
   font-size: 1rem;
-  cursor: pointer;
+  line-height: 1.5;
 }
 
-form button:hover {
-  background-color: #d81b60;
-}
-
-/* Alert Button */
 .alert-section {
   text-align: center;
   margin: 50px 0;
@@ -167,26 +142,6 @@ form button:hover {
   background-color: #d93636;
 }
 
-
-
-
-
-
-#photoPreviewContainer {
-  text-align: center;
-}
-
-#photoPreview {
-  max-height: 200px;
-  border: 2px solid #d63384;
-  border-radius: 10px;
-}
-
-
-
-
-
-/* Footer */
 footer {
   text-align: center;
   padding: 20px;
